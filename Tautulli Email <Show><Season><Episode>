@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>
+    </title>
+</head>
+
+<body style="background-color:#1f1f1f;color:#fff;">
+	<table align="center" background=black; border="0" cellpadding="0" cellspacing="0" width="700" id="templateColumns">
+		<tr>
+			<td align="center" valign="top">
+				<table style="background-color:#282828;" align="center" border="0" cellpadding="10" cellspacing="0" width="700"
+					<tr>
+						<td class="centerColumnContent">
+							<img src="https://i.imgur.com/vkKxZF1.png" width="620" style="max-width:600px;" class="columnImage" />
+						</td>
+					</tr>
+				</table>
+            
+				<table color="white" align="left" border="0" cellpadding="10" cellspacing="0" width="300px" class="templateColumnContainer">
+					<tr>
+						<td class="leftColumnContent">
+							<img src="{poster_url}" width="280" style="max-width:280px;" class="columnImage" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="leftColumnContent" valign="center">
+							<a href="{imdb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/bbsMNFr.png" alt="IMDB" width="32" height="32" border="0">
+							</a>
+							<a href="{thetvdb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/Yi7UtQK.png" alt="The TV Database" width="32" height="32" border="0">
+							</a>
+							<a href="{themoviedb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/NbgUG31.jpg" alt="The Movie Database" width="32" height="32" border="0">
+							</a>
+							<a href="{trakt_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/a229EBm.png" alt="Trakt" width="32" height="32" border="0">
+							</a>
+							<a href="{lastfm_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/UlHoS0O.png" alt="Last.FM" width="32" height="32" border="0">
+							</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <table color="white" align="right" border="0" cellpadding="0" cellspacing="0" width="400px" class="templateColumnContainer">
+                <tr>
+						<td class="rightColumnContent">
+							<a style="text-decoration:none;color:#f9be03;" href="{plex_url}"><b style="font-size:160%;"><p>{show_name}</b><br><show>S{season_num}</show><season>S{season_num} · E{episode_num00}</season><episode>S{season_num} · E{episode_num00} — {episode_name}<br></episode></a></p>
+							<show><b style="color:#999;">Studio</b> <strong>{studio}</strong></show><season><b style="color:#999;">Studio</b> <strong>{studio}</strong></season><show> · <b style="color:#999;">Aired</b> <strong>{air_date}</strong></show><episode><b style="color:#999;">Aired</b> <strong>{air_date}</strong></episode><br>
+							<b style="color:#999;">Runtime</b> <strong>{duration} mins</strong> · <b style="color:#999;">Rated</b> <strong>{content_rating}</strong>
+                        
+						<show>
+							<table color="white" align="left" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="leftColumnContent">
+										<dl>
+											<dt style="color:#999;">Starring</strong></dt>
+											<dd>{actors:[0:1]}</dd>
+											<dd>{actors:[1:2]}</dd>
+											<dd>{actors:[2:3]}</dd>
+											<dd>{actors:[3:4]}</dd>
+											<dd>{actors:[4:5]}</dd>
+										</dl>
+									</td>
+							
+							<table color="white" align="right" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="rightColumnContent">
+										<dl>
+											<dt style="color:#999;">Genres</dt>
+											<dd>{genres:[0:1]}</dd>
+											<dd>{genres:[1:2]}</dd>
+											<dd>{genres:[2:3]}</dd>
+											<dd>{genres:[3:4]}</dd>
+											<dd>{genres:[4:5]}</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+							</table>
+                        </show>
+                        
+                        <season>
+							<table color="white" align="left" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="leftColumnContent">
+										<dl>
+											<dt style="color:#999;">Starring</strong></dt>
+											<dd>{actors:[0:1]}</dd>
+											<dd>{actors:[1:2]}</dd>
+											<dd>{actors:[2:3]}</dd>
+											<dd>{actors:[3:4]}</dd>
+											<dd>{actors:[4:5]}</dd>
+										</dl>
+									</td>
+                        
+							<table color="white" align="right" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="rightColumnContent">
+										<dl>
+											<dt style="color:#999;">Genres</dt>
+											<dd>{genres:[0:1]}</dd>
+											<dd>{genres:[1:2]}</dd>
+											<dd>{genres:[2:3]}</dd>
+											<dd>{genres:[3:4]}</dd>
+											<dd>{genres:[4:5]}</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                            </table>
+                        </season>
+                        
+							<table color="white" align="left" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="leftColumnContent">
+										<episode>
+											<b style="color:#999;">Directed By:</b> {directors}<br>
+											<b style="color:#999;">Written By:</b> {writers}<br>
+											<b style="color:#999;">Video:</b> {video_resolution}p — {video_codec!u}<br>
+											<b style="color:#999;">Audio:</b> {audio_language} — {audio_codec!u} {audio_channel_layout}<br>
+											<b style="color:#999;">Subtitles:</b> {subtitle_language}<br>
+											<br>
+											<b>{tagline}</b>
+										</episode>
+										<p style="width:360px;background-color: #555;border-radius: 3px;padding: 6px 12px;margin-bottom:10px">{summary}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            
+				<table style="background-color:#282828;" align="center" border="0" cellpadding="10" cellspacing="0" width="700"
+					<tr>
+						<td class="centerColumnContent">
+							<p width="10px;" max-width="600px;" align="center">Footer (Not done)</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
