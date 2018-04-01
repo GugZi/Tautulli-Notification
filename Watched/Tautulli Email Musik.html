@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>
+    </title>
+</head>
+
+<body style="background-color:#1f1f1f;color:#fff;">
+	<table align="center" background=black; border="0" cellpadding="0" cellspacing="0" width="700" id="templateColumns">
+		<tr>
+			<td align="center" valign="top">
+				<table style="background-color:#282828;" align="center" border="0" cellpadding="10" cellspacing="0" width="700"
+					<tr>
+						<td class="centerColumnContent">
+							<img align="middle" src="https://i.imgur.com/vkKxZF1.png" width="620" style="max-width:600px;" class="columnImage" />
+						</td>
+					</tr>
+				</table>
+            
+				<table color="white" align="left" border="0" cellpadding="10" cellspacing="0" width="300px" class="templateColumnContainer">
+					<tr>
+						<td class="leftColumnContent">
+							<img src="{poster_url}" width="280" style="max-width:280px;" class="columnImage" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="leftColumnContent" valign="center">
+							<a href="{plex_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/xf9wXPn.png" alt="View on Plex" width="32" height="32" border="0">
+							</a>
+							<a href="{imdb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/bbsMNFr.png" alt="View on IMDB" width="32" height="32" border="0">
+							</a>
+							<a href="{thetvdb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/Yi7UtQK.png" alt="View on The TV Database" width="32" height="32" border="0">
+							</a>
+							<a href="{themoviedb_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/NbgUG31.jpg" alt="View on The Movie Database" width="32" height="32" border="0">
+							</a>
+							<a href="{trakt_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+								<img src="https://i.imgur.com/a229EBm.png" alt="View on Trakt" width="32" height="32" border="0">
+							</a>
+							<a href="{lastfm_url}" style="text-decoration:none;padding:0 10px 0px 0px;">
+									<img src="https://i.imgur.com/UlHoS0O.png" alt="View on Last.FM" width="32" height="32" border="0">
+							</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <table color="white" align="right" border="0" cellpadding="0" cellspacing="0" width="400px" class="templateColumnContainer">
+                <tr>
+						<td class="rightColumnContent">
+							<a style="text-decoration:none;color:#f9be03;" href="{plex_url}"><b style="font-size:160%;">{artist_name}</b><br><artist>Albums <strong style="color:#fff;">{album_count}</strong></artist><album>{album_name}<br>Tracks <strong style="color:#fff;">{track_count}</strong></album><track>{album_name}<br>{track_name}</track></a><br><br>
+							
+							<div align="left" width="300px" class="details"
+								<album><b style="color:#999;">Studio</b> <strong style="color:#fff;">{studio}</strong> <b style="color:#999;">Released</b> <strong style="color:#fff;">{release_date}</strong></album><track><b style="color:#999;">Released</b> <strong style="color:#fff;">{year}</strong> · <b style="color:#999;">Runtime</b> <strong style="color:#fff;">{duration} mins</strong></track>
+							</div>
+							
+							<table color="white" align="left" border="0" cellpadding="0" cellspacing="0" width="200px" class="templateColumnContainer">
+								<tr>
+									<td class="leftColumnContent">
+										<dl>
+											<dt style="color:#999;">Genres</dt>
+											<dd>{genres:[0:1]}</dd>
+											<dd>{genres:[1:2]}</dd>
+											<dd>{genres:[2:3]}</dd>
+											<dd>{genres:[3:4]}</dd>
+											<dd>{genres:[4:5]}</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+							</table>
+							
+							<table color="white" align="left" border="0" cellpadding="0" cellspacing="0" width="210px" class="templateColumnContainer">
+								<tr>
+									<td class="leftColumnContent">
+										<track>
+											<b style="color:#999;">Audio:</b> {audio_codec!u}<br>
+											<b style="color:#999;">Channels:</b> {audio_channel_layout}<br>
+											<b style="color:#999;">Bitrate:</b> {audio_bitrate} kbps<br>
+											<b style="color:#999;">Sampling Rate:</b> {audio_sample_rate}<br>
+										</track>
+										<artist><p style="width:360px;background-color: #555;border-radius: 3px;padding: 6px 12px;margin-bottom:10px">{summary}</p></artist>
+										<album><p style="width:360px;background-color: #555;border-radius: 3px;padding: 6px 12px;margin-bottom:10px">{summary}</p></album>
+                                    </td>
+                                </tr>
+                            </table>
+							
+                        </td>
+                    </tr>
+                </table>
+            
+				<table style="background-color:#282828;" align="center" border="0" cellpadding="10" cellspacing="0" width="700"
+					<tr>
+						<td class="centerColumnContent">
+							<a href="mailto:inuke.inuke@gmail.com?&body=Jeg%20har%20ikke%20lyst%20til%20at%20modtage%20mail%20mere%20fra%20nyt%20{media_type}&subject=Unsubscribe fra {media_type}" target="_top">Unsubscribe</a>
+							<p width="10px;" max-width="600px;" align="center">© GugZi</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
